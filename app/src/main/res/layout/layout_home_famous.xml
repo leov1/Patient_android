@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/layout_title"
+    android:layout_marginTop="@dimen/space_13"
+    android:layout_height="49dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22dp"
+        android:textColor="#979797"
+        android:gravity="center"
+        android:text="名医风采"
+        android:textSize="@dimen/text_size_17" />
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_15"
+        android:drawablePadding="@dimen/space_5"
+        android:drawableRight="@mipmap/ic_setting_arrow"
+        android:gravity="center_vertical"
+        android:padding="@dimen/space_10"
+        android:visibility="gone"
+        android:text="全部"
+        android:textSize="@dimen/text_size_13" />
+
+    <View
+        style="@style/horizontal_divider"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15" />
+</RelativeLayout>

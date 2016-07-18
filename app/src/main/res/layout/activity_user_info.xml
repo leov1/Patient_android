@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by xukelong -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acticityUserInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_footer_bg"
+    android:orientation="vertical"
+    tools:context="com.hxqydyl.androidapp.mine.activity.UserInfoActivity">
+
+    <com.hxqydyl.androidapp.base.view.TopBar
+        android:id="@+id/settingTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbar_title="个人中心" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/imgUserInfoHeadItem"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+
+            android:background="@color/white"
+            android:clickable="false"
+            android:focusable="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="头像："
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgUserInfoHead"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="14dp"
+                android:src="@mipmap/women">
+
+            </ImageView>
+        </RelativeLayout>
+
+        <View style="@style/viewLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="15dp"
+
+                android:text="姓名："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editUserInfoName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:background="@null"
+                android:gravity="right"
+                android:paddingLeft="20dp"
+                android:text="依依hahaahah"
+                android:textColor="#909090"
+                android:textSize="15sp"
+                android:enabled="false">
+
+            </EditText>
+        </RelativeLayout>
+
+        <View style="@style/viewLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="性别："
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textUserInfoSex"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:background="@null"
+                android:gravity="right"
+                android:text="女"
+                android:textColor="#909090"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <View style="@style/viewLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/llItemBirthday"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="出生日期："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editUserInfoBirthday"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:background="@null"
+                android:gravity="right"
+                android:text="1991.7.6"
+                android:textColor="#909090"
+                android:textSize="15sp"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveUserInfo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="225dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/btn_bg_selecter"
+        android:text="保存"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

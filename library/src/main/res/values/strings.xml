@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">photoGallery</string>
+    <string name="title_activity_media_chose">选择图片</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_crop_image">CropImageActivity</string>
+
+    <string name="ucrop_label_original">原始比例</string>
+    <string name="ucrop_label_edit_photo">裁剪</string>
+
+    <string name="ucrop_menu_crop">裁剪</string>
+    <string name="ucrop_error_input_data_is_absent">Both input and output Uri must be specified</string>
+
+    <string name="title_get_accounts">GET_ACCOUNTS</string>
+    <string name="message_get_accounts">PermissionHelper supports all screens, try rotating your phone/tablet</string>
+    <string name="explanation_message_get_accounts">We need this permission to customize your experience by auto completing your email address</string>
+
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+
+
+</resources>

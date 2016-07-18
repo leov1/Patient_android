@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.hxqydyl.androidapp.base.view.TopBar
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_edit_search_frame"
+            android:paddingLeft="20dp"
+
+            android:hint="请输入医生名字"
+            android:textColor="#f4f7f7" />
+
+        <ImageView
+            android:id="@+id/imgSearchDoctors"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/btn_search" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

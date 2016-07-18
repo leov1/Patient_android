@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">好心情</string>
+
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+
+    <!-- 页面名称 -->
+    <string name="main_navigation_home">首页</string>
+    <string name="main_navigation_im">消息</string>
+    <string name="main_navigation_interest">心灵氧吧</string>
+    <string name="main_navigation_user">我的</string>
+
+    <string name="progress_loading">加载中，请稍候</string>
+    <string name="progress_load_error">加载失败，点击屏幕刷新</string>
+    <string name="progress_load_no_data">暂无数据</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutUsDetail">\u3000\u3000态系统平台，提高人们的精神心理健康水平（使命）。
+        2013年卫生部统计数据表明，目前我国有各类精神疾病患者1亿多人，重性精神障碍患者超过1600万人。
+        然而精神卫生服务资源十分短缺且分布不均，现有服务能力和水平远不能满足人民群众的健康需求及社会管理的需要。
+        十二届全国人大三次会议上李克强总理提出“互联网+”概念。“江苏好欣晴移动医疗科技有限公司”
+        于2015年10月应运而生，填补了互联网医疗市场在精神心理领域的空白。</string>
+    <string name="feedBackHint">请填写您的意见或建议，我们会及时跟进（最少输入十个字）</string>
+
+    <string name="free_ask_hint">请详细描述您的症状、疾病和身体情况，好欣晴为您自动分诊到正确科室并保证您的隐私安全(最少输入10个字)。</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <!--actionbar title -->
+    <string name="main_name">融云</string>
+    <string name="de_actionbar_myacc">"个人账号"</string>
+    <string name="de_actionbar_sub_group">"群组"</string>
+    <string name="de_actionbar_sub_private">"我的私人会话"</string>
+    <string name="de_actionbar_sub_discussion">"我的讨论组"</string>
+    <string name="de_actionbar_sub_system">"系统消息"</string>
+    <string name="de_actionbar_sub_defult">"聊天"</string>
+    <string name="de_actionbar_set_public">"公众号"</string>
+    <string name="de_actionbar_system">"系统消息"</string>
+    <string name="main_customer">意见反馈</string>
+
+    <string name="no_data">无数据</string>
+
+</resources>

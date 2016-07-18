@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_ask_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/home_question_baseinfo_title"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" />
+
+    <TableRow android:layout_width="match_parent">
+
+        <TextView
+            style="@style/grey_15_text"
+            android:padding="@dimen/text_size_16"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/home_question_name"
+            style="@style/grey_center_text"
+            android:background="@null"
+            android:hint="请输入姓名" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" />
+
+    <TableRow android:layout_width="match_parent">
+
+        <TextView
+            style="@style/grey_15_text"
+            android:padding="@dimen/text_size_16"
+            android:text="性别" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/maleButton"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/radio_blue"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_9"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:paddingTop="@dimen/space_9"
+                android:text="男"
+                android:textColor="@drawable/tags_text_color_seletor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/femaleButton"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/radio_blue"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_9"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_9"
+                android:paddingTop="@dimen/space_9"
+                android:text="女"
+                android:textColor="@drawable/tags_text_color_seletor"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_light" />
+
+    <TableRow android:layout_width="match_parent">
+
+        <TextView
+            style="@style/grey_15_text"
+            android:padding="@dimen/text_size_16"
+            android:text="出生日期" />
+
+        <EditText
+            android:id="@+id/home_question_birthday"
+            style="@style/grey_center_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入出生日期"
+            android:inputType="text"
+            android:padding="@dimen/text_size_16" />
+    </TableRow>
+</TableLayout>

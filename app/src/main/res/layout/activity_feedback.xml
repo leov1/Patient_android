@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by xukelong -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_footer_bg"
+    tools:context="com.hxqydyl.androidapp.mine.activity.FeedbackActivity">
+
+    <com.hxqydyl.androidapp.base.view.TopBar
+        android:id="@+id/settingTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbar_title="意见反馈" />
+
+    <EditText
+        android:id="@+id/editFeedBackInput"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_below="@id/settingTopbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="start"
+        android:hint="@string/feedBackHint"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="30dp"
+        android:singleLine="false"
+        android:textColor="#99000000"
+        android:textSize="15sp"
+        android:maxLength="300"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editFeedBackInput"
+        android:layout_alignEnd="@+id/editFeedBackInput"
+        android:layout_alignRight="@+id/editFeedBackInput"
+        android:paddingBottom="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/textTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editFeedBackInput"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_toStartOf="@+id/textView"
+            android:text="0"
+            android:textColor="#909090"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/300"
+            android:textSize="15sp"
+            android:textColor="#909090"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlInputTelNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editFeedBackInput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="21dp">
+
+        <EditText
+            android:id="@+id/editTelNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:hint="请输入手机号码"
+            android:textSize="15sp"/>
+        <ImageView
+            android:id="@+id/imgDeleteTelNumber"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/zhengque"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnFeedbackCommit"
+        android:layout_width="225dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/rlInputTelNumber"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/btn_bg_selecter"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

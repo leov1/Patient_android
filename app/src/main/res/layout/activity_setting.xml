@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by xukelong -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_footer_bg"
+    android:orientation="vertical"
+    tools:context=".mine.activity.SettingActivity">
+
+    <com.hxqydyl.androidapp.base.view.TopBar
+        android:id="@+id/settingTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbar_show_return_arrow="true"
+        app:topbar_title="我的设置" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="14dp">
+
+        <TextView
+            android:id="@+id/textAboutUs"
+            style="@style/textViewStyleOfSettingActivity"
+            android:clickable="true"
+            android:text="关于我们" />
+
+        <View style="@style/viewLineStyle"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"/>
+
+        <TextView
+            android:id="@+id/textChangeCode"
+            style="@style/textViewStyleOfSettingActivity"
+            android:clickable="true"
+            android:text="修改密码" />
+
+        <View style="@style/viewLineStyle"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp" />
+
+        <Button
+            android:id="@+id/btnLoginOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="32px"
+            android:paddingTop="32px"
+            android:text="退出登录"
+            android:textColor="#606060"
+            android:textSize="18sp"
+            android:gravity="left"
+            android:paddingLeft="14dp"/>
+    </LinearLayout>
+</LinearLayout>

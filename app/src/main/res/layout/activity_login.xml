@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#28C5B1">
+
+
+        <TextView
+            android:id="@+id/textLogintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:id="@+id/textPhoneSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imgCleanLoginPhoneNnmber"
+            android:text="手机号:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editUserPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="83dp"
+            android:layout_toRightOf="@+id/textPhoneSign"
+            android:background="@null"
+            android:hint="请输入您的手机号"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:paddingLeft="10dp"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imgIsPhone"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/textPhoneSign"
+            android:layout_alignEnd="@+id/btnLogin"
+            android:layout_alignRight="@+id/btnLogin"
+            android:src="@mipmap/isphones"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgCleanPhone"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/textPhoneSign"
+            android:layout_alignEnd="@+id/btnLogin"
+            android:layout_alignRight="@+id/btnLogin"
+            android:src="@mipmap/min_error"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/editUserPhoneNumber"
+            android:background="#DDDDDD" />
+
+
+        <ImageView
+            android:id="@+id/imgCleanLoginPhoneNnmber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textForgerPass"
+            android:layout_alignStart="@+id/textForgerPass"
+            android:layout_alignTop="@+id/editUserPhoneNumber"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:src="@mipmap/ca"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgCleanLoginPass"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="密   码:"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/editUserPassWord"
+            android:background="#DDDDDD" />
+
+        <EditText
+            android:id="@+id/editUserPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLength="17"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/textPhoneSign"
+            android:background="@null"
+            android:hint="请输入您的8位密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imgPassWords"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/imgCleanLoginPass"
+            android:layout_alignEnd="@+id/btnLogin"
+            android:layout_alignRight="@+id/btnLogin"
+            android:src="@mipmap/isphones"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgCleanPassWords"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/imgCleanLoginPass"
+            android:layout_alignEnd="@+id/btnLogin"
+            android:layout_alignRight="@+id/btnLogin"
+            android:src="@mipmap/min_error"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgCleanLoginPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editUserPassWord"
+            android:layout_alignLeft="@+id/imgCleanLoginPhoneNnmber"
+            android:layout_alignStart="@+id/imgCleanLoginPhoneNnmber"
+            android:layout_marginBottom="11dp"
+            android:src="@mipmap/ca"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editUserPassWord"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/btn_round_radius"
+            android:textColor="#ffffff"
+            android:text="登录" />
+
+        <TextView
+            android:id="@+id/textNoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_marginLeft="53dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@+id/textForgerPass"
+            android:layout_toRightOf="@+id/textForgerPass"
+            android:padding="15dp"
+            android:text="注册" />
+
+        <TextView
+            android:id="@+id/textForgerPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textNoAccount"
+            android:layout_alignBottom="@+id/textNoAccount"
+            android:layout_alignLeft="@+id/editUserPassWord"
+            android:layout_alignStart="@+id/editUserPassWord"
+
+            android:padding="15dp"
+            android:text="忘记密码" />
+    </RelativeLayout>
+</RelativeLayout>

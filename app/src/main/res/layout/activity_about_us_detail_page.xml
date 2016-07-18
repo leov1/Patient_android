@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by xukelong -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".mine.activity.AboutUsDetailActivity">
+
+    <com.hxqydyl.androidapp.base.view.TopBar
+        android:id="@+id/settingTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbar_title="关于我们" />
+
+    <RelativeLayout
+        android:id="@+id/rlAboutUsMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingTopbar"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/imgAboutUsDetail"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/textVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgAboutUsDetail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="V 2.3.0"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/textVersion">
+
+            <TextView
+                android:id="@+id/textAboutUsDetail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="35dp"
+                android:textSize="14sp"
+                android:text="@string/aboutUsDetail"/>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlAboutUsMessage"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="北京好欣晴移动医疗科技有限公司 版权所有"
+            android:textColor="#636363"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Copyright © 2015-2016 hxqydyl"
+            android:textColor="@color/text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="All Rights Reserved"
+            android:textColor="@color/text_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.hxqydyl.androidapp.base.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbar_show_return_arrow="true"
+        app:topbar_title="免费提问" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_white"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/home_question_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_size_10"
+                android:background="@drawable/bg_edittext_focused"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/home_question_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@color/white"
+                    android:textColor="#8f8f8f"
+                    android:gravity="start"
+                    android:hint="@string/free_ask_hint"
+                    android:padding="@dimen/text_size_16"
+                    android:textSize="14sp" />
+
+                <com.hxqydyl.androidapp.base.view.MyGridView
+                    android:id="@+id/home_question_imgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:columnWidth="90dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/home_question_baseinfo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_question_content_layout"
+                android:padding="@dimen/space_14"
+                android:text="基本信息"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <include layout="@layout/layout_ask_info" />
+
+            <Button
+                android:id="@+id/quick_question_submit"
+                android:layout_width="300dp"
+                android:background="@color/status_bar_bg"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_below="@+id/ly_ask_info"
+                android:layout_marginTop="40dp"
+                android:text="提交" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+

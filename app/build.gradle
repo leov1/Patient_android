@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.hxqydyl.androidapp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    /*首页轮播图用到的下面3个*/
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    /*首页*/
+    compile 'com.github.manuelpeinado.fadingactionbar:fadingactionbar:3.1.2'
+    /*网路请求框架*/
+    compile 'com.zhy:okhttputils:2.6.2'
+    /*扫描二维码*/
+    compile 'com.google.zxing:javase:3.2.1'
+    /*解析*/
+    compile 'com.alibaba:fastjson:1.2.13'
+    compile project(':library')
+    compile project(':Rong_Cloud_Android_IMKit_v2_6_5')
+}
